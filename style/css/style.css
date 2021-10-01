@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*Google Font CSS*/
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    font-size: 10px;/*for responsive-size*/
+}
+
+.body {      
+    background-color: #f5f5f5;
+}
+
+
+
+
+/*NAVBAR-SECTION*/
+
+.menu-bar {
+    background-color: white;   
+}
+
+#navbarCollapse a {
+    font-size: 1.44rem;
+    width: 27.2rem;
+    text-align: center;
+    border-radius: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.nav-li i {
+    margin-right:1.6rem ;
+}
+
+.nav-item a:hover {
+    background-color: #337ab7;
+    color: white;
+}
+
+.nav-li a {
+    color: black;
+    padding: 2.4rem;
+}
+
+
+
+/*CONTENT SECTION*/
+
+picture source {
+    width: 100%;
+    height: auto;
+}
+picture source .img-thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+.information-card li a{
+    text-decoration: none;
+}
+
+.social-li a {
+    color: black;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+.main-content .container {
+    margin-top: 12.8rem;
+}
+
+.competencies-icon {
+    color:#337ab7 ;
+}
+
+.education-date, .trainings-date {
+    font-size: 1.28rem;
+}
+
+.organization-text {
+    margin-top: 3rem;
+}
+
+.organisation-link:hover {
+    text-decoration: none;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+
+.logo-image{
+    width: 20%;
+    height: 50%;
+    float: right;
+}
+
+.tab-content {
+    margin-bottom: 2rem;
+}
+
+.tab-pane.active {
+    -webkit-transition: opacity .25s linear;
+    -moz-transition: opacity .25s linear;
+    -o-transition: opacity .25s linear;
+}
+
+.summary-list li {
+    font-weight: 600;
+    margin: 0.32rem;
+    padding: 1.6rem 3.2rem 1.6rem .8rem;
+    font-size: .9rem;
+}
+
+.summary-list li i {
+    color: #337ab7;
+}
+
+.summary-list li:hover {
+    border-bottom: 1px solid #337ab7;
+    padding-left: 1.44rem;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button{
+    font-size: 1.5rem;
+}
+
+
+
+
+/*FOOTER SECTION*/
+.footer {
+    background-color: #1a1a1a;
+    color: grey;
+    padding: 2.4rem;
+}
+
+
+
+
+/*RESPONSIVE - BREAKPOINTS*/
+
+@media screen and (max-width: 768px) {
+    .body {
+        font-size: 1.3rem;
+    }
+
+    .summary-list li {
+        font-size: 1.1rem;
+    }
+
+    .contact-form input, .contact-form textarea, .contact-form button{
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .body {
+        font-size: 1.4rem;
+    }
+
+    .summary-list li {
+        font-size: 1.2rem;
+    }
+
+    .contact-form input, .contact-form textarea, .contact-form button{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 993px)  {
+    .body {
+        font-size: 1.5rem;
+    }
+    
+    .summary-list li {
+        font-size: 1.3rem;
+    }
+
+    .contact-form input, .contact-form textarea, .contact-form button{
+        font-size: 1.5rem;
+    }
+}
