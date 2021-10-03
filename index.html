@@ -53,42 +53,43 @@
 
     <!--NAVBAR SECTION-->
     <div class="menu-bar fixed-top">
-        <nav class="navbar navbar-expand-sm py-0">
+        <nav class="navbar navbar-expand-md py-0">
             <div class="container">
                 <div id="navbarCollapse" class="collapse navbar-collapse">
-                    <ul class="nav nav-pills mx-auto">
-                        <li role="presentation" class="nav-li nav-item">
-                            <a href="#about-me" class="nav-link active" id="pills-about-tab" aria-controls="about-me"
-                                role="tab" data-toggle="tab" aria-selected="true">
-                                <i class="fas fa-user-tie"></i><b>ABOUT ME</b>
-                            </a>
-                        </li>
-                        <li role="presentation" class="nav-li nav-item">
-                            <a href="#education" class="nav-link " id="pills-education-tab" aria-controls="education"
-                                role="tab" data-toggle="tab" aria-selected="false">
-                                <i class="fa fa-graduation-cap"></i><b>EDUCATIONS & TRAININGS</b>
-                            </a>
-                        </li>
-                        <li role="presentation" class="nav-li nav-item">
-                            <a href="#projects" class="nav-link" id="pills-projects-tab" aria-controls="projects"
-                                role="tab" data-toggle="tab" aria-selected="false">
-                                <i class="fas fa-folder-open"></i><b>PROJECTS</b>
-                            </a>
-                        </li>
-                        <li role="presentation" class="nav-li nav-item">
-                            <a href="#contact" class="nav-link" id="pills-contact-tab" aria-controls="contact"
-                                role="tab" data-toggle="tab" aria-selected="false">
-                                <i class="fas fa-comments"></i><b>CONTACT</b>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="row-list">
+                        <ul class="col nav nav-pills">
+                            <li role="presentation" class="col-md-6 col-lg-3 nav-li">
+                                <a href="#about-me" class="nav-link active" id="pills-about-tab"
+                                    aria-controls="about-me" role="tab" data-toggle="tab" aria-selected="true">
+                                    <i class="fas fa-user-tie"></i>ABOUT ME
+                                </a>
+                            </li>
+                            <li role="presentation" class="col-md-6 col-lg-3 nav-li">
+                                <a href="#education" class="nav-link" id="pills-education-tab" aria-controls="education"
+                                    role="tab" data-toggle="tab" aria-selected="false">
+                                    <i class="fa fa-graduation-cap"></i>EDUCATIONS & TRAININGS
+                                </a>
+                            </li>
+                            <li role="presentation" class="col-md-6 col-lg-3 nav-li">
+                                <a href="#projects" class="nav-link" id="pills-projects-tab" aria-controls="projects"
+                                    role="tab" data-toggle="tab" aria-selected="false">
+                                    <i class="fas fa-folder-open"></i>PROJECTS
+                                </a>
+                            </li>
+                            <li role="presentation" class="col-md-6 col-lg-3 nav-li">
+                                <a href="#contact" class="nav-link" id="pills-contact-tab" aria-controls="contact"
+                                    role="tab" data-toggle="tab" aria-selected="false">
+                                    <i class="fas fa-comments"></i>CONTACT
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                     data-target="#navbarCollapse" aria-expanded="false">
                     <span><i class="fas fa-bars fa-2x"></i></span>
                 </button>
-
             </div>
         </nav>
     </div>
@@ -101,20 +102,18 @@
                 <!--Main Content Row-->
                 <div class="row">
                     <!--Main Content Left Column-->
-                    <div class="column-left col-md-4 mb-5">
+                    <div class="column-left col-sm-4 mb-5">
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="font-weight-bold">LOREM IPSUM</h3>
+                                <h3>LOREM IPSUM</h3>
                             </div>
-
-                            <!--Profile Picture-->
-                            <picture class="profile-picture">
-                                <source srcset="img/bridge.jpg">
-                                <img src="img/bridge.jpg" class="card-img-top img-thumbnail" ;" alt="image">
-                            </picture>
-
-                            <!--Personal Informations-->
                             <div class="card-body information-card">
+                                <!--Profile Picture-->
+                                <picture class="profile-picture">
+                                    <source srcset="img/bridge.jpg">
+                                    <img src="img/bridge2.jpg" class="card-img-top img-thumbnail" alt="image">
+                                </picture>
+                                <!--Personal Informations-->
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         <p><b>NAME:</b><span> Lorem Ipsum</span></p>
@@ -153,24 +152,26 @@
                         <!--Social Medias-->
                         <div class="card my-1">
                             <div class="card-header">
-                                <h4 class="font-weight-bold">SOCIAL PROFILES</h4>
+                                <h4>SOCIAL PROFILES</h4>
                             </div>
-                            <div class="card-body social-icon p-4">
-                                <ul class="nav nav-pills justify-content-center">
-                                    <li class="social-li nav-item"><a href="#" class=" nav-link fab fa-linkedin fa-2x"
-                                            target="_blank"></a></li>
-                                    <li class="social-li nav-item"><a href="#" class="nav-link fab fa-instagram fa-2x"
-                                            target="_blank"></a></li>
-                                    <li class="social-li nav-item"><a href="#" class="nav-link fab fa-github fa-2x"
-                                            target="_blank"></a></li>
-                                    <li class="social-li nav-item"><a href="#" class="nav-link fab fa-skype fa-2x"
-                                            target="_blank"></a></li>
-                                </ul>
+                            <div class="row">
+                                <div class="card-body social-icon p-4">
+                                    <ul class="nav nav-pills">
+                                        <li class="col-3 social-li nav-item"><a href="#"
+                                                class=" nav-link fab fa-linkedin fa-2x" target="_blank"></a></li>
+                                        <li class="col-3 social-li nav-item"><a href="#"
+                                                class="nav-link fab fa-instagram fa-2x" target="_blank"></a></li>
+                                        <li class="col-3 social-li nav-item"><a href="#"
+                                                class="nav-link fab fa-facebook fa-2x" target="_blank"></a></li>
+                                        <li class="col-3 social-li nav-item"><a href="#"
+                                                class="nav-link fab fa-github fa-2x" target="_blank"></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!--Main Content Right Column-->
-                    <div class="column-right col-md-8">
+                    <div class="column-right col-sm-8">
                         <!--Dynamic Content-->
                         <div class="tab-content">
                             <!--ABOUT-->
@@ -178,140 +179,139 @@
                                 aria-labelledby="pills-about-tab">
                                 <section class="about-me">
                                     <div class="card-about card">
-                                        <h4 class="card-header font-weight-bold">ABOUT ME</h4>
+                                        <h4 class="card-header">ABOUT ME</h4>
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-                                            perspiciatis incidunt voluptatibus quis perferendis ullam nisi
-                                            voluptates iste sint necessitatibus nulla suscipit, aliquid impedit
-                                            sit
-                                            sunt ea molestias inventore corrupti!
-                                            Nesciunt quia deleniti animi veritatis suscipit id eius tenetur,
-                                            laudantium earum in? Maiores quos ullam sint impedit asperiores
-                                            perspiciatis vero cum! Modi culpa distinctio alias facere assumenda,
-                                            nulla placeat illo.
-                                            Nesciunt consequuntur neque porro nam soluta explicabo, numquam
-                                            tempora?
-                                            Reiciendis quas at nihil cumque, saepe velit dicta dignissimos
-                                            consequatur vero voluptatem quisquam non libero quibusdam nemo quia
-                                            natus odio necessitatibus.
-                                            Magni iusto quaerat deleniti aliquam, quod modi consequatur. Impedit
-                                            exercitationem fuga atque ducimus? Odit, esse quis enim, est aperiam
-                                            distinctio optio vero modi tenetur autem laudantium, nemo quam quos
-                                            ullam!
-                                            Reprehenderit quisquam fugiat mollitia voluptatem iste omnis
-                                            eligendi in
-                                            odio magnam voluptates quam veritatis, necessitatibus illum adipisci
-                                            laudantium eum modi doloribus quaerat esse facere, voluptatum velit
-                                            eaque alias saepe? Voluptates?
+                                            <p class="body-about">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+                                                perspiciatis incidunt voluptatibus quis perferendis ullam nisi
+                                                voluptates iste sint necessitatibus nulla suscipit, aliquid impedit
+                                                sit
+                                                sunt ea molestias inventore corrupti!
+                                                Nesciunt quia deleniti animi veritatis suscipit id eius tenetur,
+                                                laudantium earum in? Maiores quos ullam sint impedit asperiores
+                                                perspiciatis vero cum! Modi culpa distinctio alias facere assumenda,
+                                                nulla placeat illo.
+                                                Nesciunt consequuntur neque porro nam soluta explicabo, numquam
+                                                tempora?
+                                                Reiciendis quas at nihil cumque, saepe velit dicta dignissimos
+                                                consequatur vero voluptatem quisquam non libero quibusdam nemo quia
+                                                natus odio necessitatibus.
+                                                Magni iusto quaerat deleniti aliquam, quod modi consequatur. Impedit
+                                                exercitationem fuga atque ducimus? Odit, esse quis enim, est aperiam
+                                                distinctio optio vero modi tenetur autem laudantium, nemo quam quos
+                                                ullam!
+                                                Reprehenderit quisquam fugiat mollitia voluptatem iste omnis
+                                                eligendi in
+                                                odio magnam voluptates quam veritatis, necessitatibus illum adipisci
+                                                laudantium eum modi doloribus quaerat esse facere, voluptatum velit
+                                                eaque alias saepe? Voluptates?
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="card mt-1">
-                                        <h4 class="card-header font-weight-bold">CORE COMPETENCIES</h4>
+                                        <h4 class="card-header">CORE COMPETENCIES</h4>
                                         <div class="card-body">
-
-                                            <!--FIRST ROW-->
-                                            <div class="row  mt-2 mb-5">
-                                                <div class="col-sm-4 px-2  text-center">
-                                                    <div class="core-competencies">
-                                                        <div class="competencies-icon">
-                                                            <i class="fas fa-hourglass-half fa-2x"></i><br><b>TIME
-                                                                MANAGEMENT</b>
-                                                            <hr>
-                                                        </div>
-                                                        <div class="competencies-info">
-                                                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                                                            elit. Nostrum esse eveniet quam odit sint, excepturi
-                                                            consequuntur dolores quo necessitatibus dolorum illo
-                                                            quod vero non mollitia voluptates consequatur iusto
-                                                            maiores ab!
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4 px-2 text-center">
-                                                    <div class="core-competencies">
-                                                        <div class="competencies-icon">
-                                                            <i class="fas fa-magic fa-2x"></i><br><b>ANALYTICAL
-                                                                THINKING</b>
-                                                            <hr>
-                                                        </div>
-                                                        <div class="competencies-info">
-                                                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                                                            elit. Nostrum esse eveniet quam odit sint, excepturi
-                                                            consequuntur dolores quo necessitatibus dolorum illo
-                                                            quod vero non mollitia voluptates consequatur iusto
-                                                            maiores ab!
+                                            <div class="body-competencies">
+                                                <div class="row mt-2 mb-5">
+                                                    <div class="col-sm-12 col-md-6 col-lg-4 px-2 text-center">
+                                                        <div class="core-competencies">
+                                                            <div class="competencies-icon">
+                                                                <i class="fas fa-hourglass-half fa-2x"></i><br><b>TIME
+                                                                    MANAGEMENT</b>
+                                                                <hr>
+                                                            </div>
+                                                            <div class="competencies-info">
+                                                                Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                                elit. Nostrum esse eveniet quam odit sint, excepturi
+                                                                consequuntur dolores quo necessitatibus dolorum illo
+                                                                quod vero non mollitia voluptates consequatur iusto
+                                                                maiores ab!
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-sm-4 px-2 text-center">
-                                                    <div class="core-competencies">
-                                                        <div class="competencies-icon">
-                                                            <i class="fas fa-chart-line fa-2x"></i><br><b>INITIATIVE</b>
-                                                            <hr>
-                                                        </div>
-                                                        <div class="competencies-info">
-                                                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                                                            elit. Nostrum esse eveniet quam odit sint, excepturi
-                                                            consequuntur dolores quo necessitatibus dolorum illo
-                                                            quod vero non mollitia voluptates consequatur iusto
-                                                            maiores ab!
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!--SECOND ROW-->
-                                            <div class="row mb-5">
-                                                <div class="col-sm-4 px-2 text-center">
-                                                    <div class="core-competencies">
-                                                        <div class="competencies-icon">
-                                                            <i class="far fa-smile fa-2x"></i><br><b>COMMUNICATION</b>
-                                                            <hr>
-                                                        </div>
-                                                        <div class="competencies-info">
-                                                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                                                            elit. Nostrum esse eveniet quam odit sint, excepturi
-                                                            consequuntur dolores quo necessitatibus dolorum illo
-                                                            quod vero non mollitia voluptates consequatur iusto
-                                                            maiores ab!
+                                                    <div class="col-sm-12 col-md-6 col-lg-4 px-2 text-center">
+                                                        <div class="core-competencies">
+                                                            <div class="competencies-icon">
+                                                                <i class="fas fa-magic fa-2x"></i><br><b>ANALYTICAL
+                                                                    THINKING</b>
+                                                                <hr>
+                                                            </div>
+                                                            <div class="competencies-info">
+                                                                Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                                elit. Nostrum esse eveniet quam odit sint, excepturi
+                                                                consequuntur dolores quo necessitatibus dolorum illo
+                                                                quod vero non mollitia voluptates consequatur iusto
+                                                                maiores ab!
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-sm-4 px-2 text-center">
-                                                    <div class="core-competencies">
-                                                        <div class="competencies-icon">
-                                                            <i class="fas fa-server fa-2x"></i><br><b>TECHNICAL
-                                                                KNOWLEDGE</b>
-                                                            <hr>
-                                                        </div>
-                                                        <div class="competencies-info">
-                                                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                                                            elit. Nostrum esse eveniet quam odit sint, excepturi
-                                                            consequuntur dolores quo necessitatibus dolorum illo
-                                                            quod vero non mollitia voluptates consequatur iusto
-                                                            maiores ab!
+                                                    <div class="col-sm-12 col-md-6 col-lg-4 px-2 text-center">
+                                                        <div class="core-competencies">
+                                                            <div class="competencies-icon">
+                                                                <i
+                                                                    class="fas fa-chart-line fa-2x"></i><br><b>INITIATIVE</b>
+                                                                <hr>
+                                                            </div>
+                                                            <div class="competencies-info">
+                                                                Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                                elit. Nostrum esse eveniet quam odit sint, excepturi
+                                                                consequuntur dolores quo necessitatibus dolorum illo
+                                                                quod vero non mollitia voluptates consequatur iusto
+                                                                maiores ab!
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-sm-4 px-2 text-center">
-                                                    <div class="core-competencies">
-                                                        <div class="competencies-icon">
-                                                            <i
-                                                                class="fas fa-laptop-code fa-2x"></i><br><b>TECHNOLOGIES</b>
-                                                            <hr>
+                                                    <div class="col-sm-12 col-md-6 col-lg-4 px-2 text-center">
+                                                        <div class="core-competencies">
+                                                            <div class="competencies-icon">
+                                                                <i
+                                                                    class="far fa-smile fa-2x"></i><br><b>COMMUNICATION</b>
+                                                                <hr>
+                                                            </div>
+                                                            <div class="competencies-info">
+                                                                Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                                elit. Nostrum esse eveniet quam odit sint, excepturi
+                                                                consequuntur dolores quo necessitatibus dolorum illo
+                                                                quod vero non mollitia voluptates consequatur iusto
+                                                                maiores ab!
+                                                            </div>
                                                         </div>
-                                                        <div class="competencies-info">
-                                                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                                                            elit. Nostrum esse eveniet quam odit sint, excepturi
-                                                            consequuntur dolores quo necessitatibus dolorum illo
-                                                            quod vero non mollitia voluptates consequatur iusto
-                                                            maiores ab!
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-4 px-2 text-center">
+                                                        <div class="core-competencies">
+                                                            <div class="competencies-icon">
+                                                                <i class="fas fa-server fa-2x"></i><br><b>TECHNICAL
+                                                                    KNOWLEDGE</b>
+                                                                <hr>
+                                                            </div>
+                                                            <div class="competencies-info">
+                                                                Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                                elit. Nostrum esse eveniet quam odit sint, excepturi
+                                                                consequuntur dolores quo necessitatibus dolorum illo
+                                                                quod vero non mollitia voluptates consequatur iusto
+                                                                maiores ab!
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-4 px-2 text-center">
+                                                        <div class="core-competencies">
+                                                            <div class="competencies-icon">
+                                                                <i
+                                                                    class="fas fa-laptop-code fa-2x"></i><br><b>TECHNOLOGIES</b>
+                                                                <hr>
+                                                            </div>
+                                                            <div class="competencies-info">
+                                                                Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                                elit. Nostrum esse eveniet quam odit sint, excepturi
+                                                                consequuntur dolores quo necessitatibus dolorum illo
+                                                                quod vero non mollitia voluptates consequatur iusto
+                                                                maiores ab!
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
                                 </section>
                             </div>
                             <!--EDUCATION-->
@@ -321,19 +321,18 @@
 
                                     <!--EDUCATION Card-->
                                     <div class="card card-education mb-1">
-                                        <h4 class="card-header font-weight-bold">EDUCATIONS</h4>
+                                        <h4 class="card-header">EDUCATIONS</h4>
                                         <div class="card-body">
-                                            <div class="row mb-5">
-                                                <div class="col-md-4">
-                                                    <div class="inside-education1 d-flex">
+                                            <div class="body-education">
+                                                <!--First Row-->
+                                                <div class="row mb-5">
+                                                    <div class="col-sm-4">
                                                         <div class="date">
                                                             <span class="education-date"><b>Jan 2021 -
                                                                     Present</b></span>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-8">
-                                                    <div class="inside-education1">
+                                                    <div class="col-sm-8">
                                                         <div class="content-education">
                                                             <h5>
                                                                 <b>
@@ -341,28 +340,26 @@
                                                                 </b>
                                                             </h5>
                                                             <hr>
-                                                            <div class="legend d-flex justify-content-between w-100">
-                                                                <div class="organisation">
-                                                                    <p class="text text-primary"><a href="#"
-                                                                            class="organisation-link" target="_blank">
-                                                                            Lorem University
-                                                                        </a>
-                                                                    </p>
-                                                                    <p class="text text-city">
-                                                                        <small>COUNTRY/
-                                                                            CITY</small>
-                                                                    </p>
-                                                                </div>
-                                                                <div class="logo ml-auto">
-                                                                    <a target="_blank" href="">
-                                                                        <picture>
-                                                                            <source media="(min-width:650px)"
-                                                                                srcset="img/way.jpg">
-                                                                            <img class="logo-image" src="img/way2.jpg"
-                                                                                alt="logo">
-                                                                        </picture>
+                                                            <div class="logo ml-auto">
+                                                                <a target="_blank" href="">
+                                                                    <picture>
+                                                                        <source media="(min-width:650px)"
+                                                                            srcset="img/way.jpg">
+                                                                        <img class="logo-image" src="img/way2.jpg"
+                                                                            alt="logo">
+                                                                    </picture>
+                                                                </a>
+                                                            </div>
+                                                            <div class="organisation">
+                                                                <p class="text text-primary"><a href="#"
+                                                                        class="organisation-link" target="_blank">
+                                                                        Lorem University
                                                                     </a>
-                                                                </div>
+                                                                </p>
+                                                                <p class="text text-city">
+                                                                    <small>COUNTRY/
+                                                                        CITY</small>
+                                                                </p>
                                                             </div>
                                                             <p class="organization-text">
                                                                 Lorem ipsum, dolor sit amet consectetur
@@ -375,20 +372,17 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-5">
-                                                <div class="col-md-4">
-                                                    <div class="inside-education2 d-flex">
+
+                                                <!--Second Row-->
+                                                <div class="row mb-5">
+                                                    <div class="col-sm-4">
                                                         <div class="date">
                                                             <span class="education-date"><b>Jan 2019 - March
                                                                     -
                                                                     2019</b></span>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-8">
-                                                    <div class="inside-education2 d-flex">
-
+                                                    <div class="col-sm-8">
                                                         <div class="content-education">
                                                             <h5>
                                                                 <b>
@@ -396,29 +390,29 @@
                                                                 </b>
                                                             </h5>
                                                             <hr>
-                                                            <div class="legend d-flex justify-content-between w-100">
-                                                                <div class="organisation">
-                                                                    <p class="text text-primary"><a href="#"
-                                                                            class="organisation-link" target="_blank">
-                                                                            Lorem University
-                                                                        </a>
-                                                                    </p>
-                                                                    <p class="text text-city">
-                                                                        <small>COUNTRY/
-                                                                            CITY</small>
-                                                                    </p>
-                                                                </div>
-                                                                <div class="logo ml-auto">
-                                                                    <a target="_blank" href="">
-                                                                        <picture>
-                                                                            <source media="(min-width:650px)"
-                                                                                srcset="img/way.jpg">
-                                                                            <img class="logo-image"
-                                                                                src="img/bridge2.jpg" alt="logo">
-                                                                        </picture>
-                                                                    </a>
-                                                                </div>
+                                                            <div class="logo ml-auto">
+                                                                <a target="_blank" href="">
+                                                                    <picture>
+                                                                        <source media="(min-width:650px)"
+                                                                            srcset="img/way.jpg">
+                                                                        <img class="logo-image" src="img/bridge2.jpg"
+                                                                            alt="logo">
+                                                                    </picture>
+                                                                </a>
                                                             </div>
+
+                                                            <div class="organisation">
+                                                                <p class="text text-primary"><a href="#"
+                                                                        class="organisation-link" target="_blank">
+                                                                        Lorem University
+                                                                    </a>
+                                                                </p>
+                                                                <p class="text text-city">
+                                                                    <small>COUNTRY/
+                                                                        CITY</small>
+                                                                </p>
+                                                            </div>
+
                                                             <p class="organization-text">
                                                                 Lorem ipsum, dolor sit amet consectetur
                                                                 adipisicing elit. Temporibus deleniti mollitia
@@ -430,18 +424,16 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-5">
-                                                <div class="col-md-4">
-                                                    <div class="inside-education3 d-flex">
+
+                                                <!--Third Row-->
+                                                <div class="row mb-5">
+                                                    <div class="col-sm-4">
                                                         <div class="date">
                                                             <span class="education-date"><b>March 2018 - Aug
                                                                     2018</b></span>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-8">
-                                                    <div class="inside-education3 d-flex">
+                                                    <div class="col-sm-8">
                                                         <div class="content-education">
                                                             <h5>
                                                                 <b>
@@ -450,28 +442,27 @@
                                                             </h5>
                                                             <hr>
 
-                                                            <div class="legend d-flex justify-content-between w-100">
-                                                                <div class="organisation">
-                                                                    <p class="text text-primary"><a href="#"
-                                                                            class="organisation-link" target="_blank">
-                                                                            Lorem University
-                                                                        </a>
-                                                                    </p>
-                                                                    <p class="text text-city">
-                                                                        <small>COUNTRY/
-                                                                            CITY</small>
-                                                                    </p>
-                                                                </div>
-                                                                <div class="logo ml-auto">
-                                                                    <a target="_blank" href="">
-                                                                        <picture>
-                                                                            <source media="(min-width:650px)"
-                                                                                srcset="img/way.jpg">
-                                                                            <img class="logo-image"
-                                                                                src="img/bridge2.jpg" alt="logo">
-                                                                        </picture>
+                                                            <div class="logo ml-auto">
+                                                                <a target="_blank" href="">
+                                                                    <picture>
+                                                                        <source media="(min-width:650px)"
+                                                                            srcset="img/way.jpg">
+                                                                        <img class="logo-image" src="img/bridge2.jpg"
+                                                                            alt="logo">
+                                                                    </picture>
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="organisation">
+                                                                <p class="text text-primary"><a href="#"
+                                                                        class="organisation-link" target="_blank">
+                                                                        Lorem University
                                                                     </a>
-                                                                </div>
+                                                                </p>
+                                                                <p class="text text-city">
+                                                                    <small>COUNTRY/
+                                                                        CITY</small>
+                                                                </p>
                                                             </div>
                                                             <p class="organization-text">
                                                                 Lorem ipsum, dolor sit amet consectetur
@@ -489,21 +480,20 @@
                                     </div>
 
                                     <!--TRAININGS Card-->
-                                    <div class="row trainings"></div>
                                     <div class="card card-trainings">
-                                        <h4 class="card-header font-weight-bold">TRAININGS</h4>
+                                        <h4 class="card-header">TRAININGS</h4>
                                         <div class="card-body">
-                                            <div class="row mb-5">
-                                                <div class="col-md-4">
-                                                    <div class="inside-trainings1 d-flex">
+                                            <div class="body-trainings">
+
+                                                <!--T-First Row-->
+                                                <div class="row mb-5">
+                                                    <div class="col-sm-4">
                                                         <div class="date">
                                                             <span class="trainings-date"><b>Jan 2021 -
                                                                     Present</b></span>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-8">
-                                                    <div class="inside-trainings1 d-flex">
+                                                    <div class="col-sm-8">
                                                         <div class="content-trainings">
                                                             <h5>
                                                                 <b>
@@ -511,28 +501,28 @@
                                                                 </b>
                                                             </h5>
                                                             <hr>
-                                                            <div class="legend d-flex justify-content-between w-100">
-                                                                <div class="organisation">
-                                                                    <p class="text text-primary"><a href="#"
-                                                                            class="organisation-link" target="_blank">
-                                                                            Lorem University
-                                                                        </a>
-                                                                    </p>
-                                                                    <p class="text text-city">
-                                                                        <small>COUNTRY/
-                                                                            CITY</small>
-                                                                    </p>
-                                                                </div>
-                                                                <div class="logo ml-auto">
-                                                                    <a target="_blank" href="">
-                                                                        <picture>
-                                                                            <source media="(min-width:650px)"
-                                                                                srcset="img/way.jpg">
-                                                                            <img class="logo-image"
-                                                                                src="img/bridge2.jpg" alt="logo">
-                                                                        </picture>
+
+                                                            <div class="logo ml-auto">
+                                                                <a target="_blank" href="">
+                                                                    <picture>
+                                                                        <source media="(min-width:650px)"
+                                                                            srcset="img/way.jpg">
+                                                                        <img class="logo-image" src="img/bridge2.jpg"
+                                                                            alt="logo">
+                                                                    </picture>
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="organisation">
+                                                                <p class="text text-primary"><a href="#"
+                                                                        class="organisation-link" target="_blank">
+                                                                        Lorem University
                                                                     </a>
-                                                                </div>
+                                                                </p>
+                                                                <p class="text text-city">
+                                                                    <small>COUNTRY/
+                                                                        CITY</small>
+                                                                </p>
                                                             </div>
                                                             <p class="organization-text">
                                                                 Lorem ipsum, dolor sit amet consectetur
@@ -545,20 +535,17 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-5">
-                                                <div class="col-md-4">
-                                                    <div class="inside-trainings2 d-flex">
+
+                                                <!--T-Second Row-->
+                                                <div class="row mb-5">
+                                                    <div class="col-sm-4">
                                                         <div class="date">
                                                             <span class="trainings-date"><b>Jan 2019 - March
                                                                     -
                                                                     2019</b></span>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-8">
-                                                    <div class="inside-trainings2 d-flex">
-
+                                                    <div class="col-sm-8">
                                                         <div class="content-trainings">
                                                             <h5>
                                                                 <b>
@@ -566,28 +553,28 @@
                                                                 </b>
                                                             </h5>
                                                             <hr>
-                                                            <div class="legend d-flex justify-content-between w-100">
-                                                                <div class="organisation">
-                                                                    <p class="text text-primary"><a href="#"
-                                                                            class="organisation-link" target="_blank">
-                                                                            Lorem University
-                                                                        </a>
-                                                                    </p>
-                                                                    <p class="text text-city">
-                                                                        <small>COUNTRY/
-                                                                            CITY</small>
-                                                                    </p>
-                                                                </div>
-                                                                <div class="logo ml-auto">
-                                                                    <a target="_blank" href="">
-                                                                        <picture>
-                                                                            <source media="(min-width:650px)"
-                                                                                srcset="img/way.jpg">
-                                                                            <img class="logo-image"
-                                                                                src="img/bridge2.jpg" alt="logo">
-                                                                        </picture>
+
+                                                            <div class="logo ml-auto">
+                                                                <a target="_blank" href="">
+                                                                    <picture>
+                                                                        <source media="(min-width:650px)"
+                                                                            srcset="img/way.jpg">
+                                                                        <img class="logo-image" src="img/bridge2.jpg"
+                                                                            alt="logo">
+                                                                    </picture>
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="organisation">
+                                                                <p class="text text-primary"><a href="#"
+                                                                        class="organisation-link" target="_blank">
+                                                                        Lorem University
                                                                     </a>
-                                                                </div>
+                                                                </p>
+                                                                <p class="text text-city">
+                                                                    <small>COUNTRY/
+                                                                        CITY</small>
+                                                                </p>
                                                             </div>
                                                             <p class="organization-text">
                                                                 Lorem ipsum, dolor sit amet consectetur
@@ -600,18 +587,16 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-5">
-                                                <div class="col-md-4">
-                                                    <div class="inside-trainings3 d-flex">
+
+                                                <!--T-Third Row-->
+                                                <div class="row mb-5">
+                                                    <div class="col-sm-4">
                                                         <div class="date">
                                                             <span class="trainings-date"><b>March 2018 - Aug
                                                                     2018</b></span>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-8">
-                                                    <div class="inside-trainings3 d-flex">
+                                                    <div class="col-sm-8">
                                                         <div class="content-trainings">
                                                             <h5>
                                                                 <b>
@@ -619,29 +604,27 @@
                                                                 </b>
                                                             </h5>
                                                             <hr>
+                                                            <div class="logo ml-auto">
+                                                                <a target="_blank" href="">
+                                                                    <picture>
+                                                                        <source media="(min-width:650px)"
+                                                                            srcset="img/way.jpg">
+                                                                        <img class="logo-image" src="img/bridge2.jpg"
+                                                                            alt="logo">
+                                                                    </picture>
+                                                                </a>
+                                                            </div>
 
-                                                            <div class="legend d-flex justify-content-between w-100">
-                                                                <div class="organisation">
-                                                                    <p class="text text-primary"><a href="#"
-                                                                            class="organisation-link" target="_blank">
-                                                                            Lorem University
-                                                                        </a>
-                                                                    </p>
-                                                                    <p class="text text-city">
-                                                                        <small>COUNTRY/
-                                                                            CITY</small>
-                                                                    </p>
-                                                                </div>
-                                                                <div class="logo ml-auto">
-                                                                    <a target="_blank" href="">
-                                                                        <picture>
-                                                                            <source media="(min-width:650px)"
-                                                                                srcset="img/way.jpg">
-                                                                            <img class="logo-image"
-                                                                                src="img/bridge2.jpg" alt="logo">
-                                                                        </picture>
+                                                            <div class="organisation">
+                                                                <p class="text text-primary"><a href="#"
+                                                                        class="organisation-link" target="_blank">
+                                                                        Lorem University
                                                                     </a>
-                                                                </div>
+                                                                </p>
+                                                                <p class="text text-city">
+                                                                    <small>COUNTRY/
+                                                                        CITY</small>
+                                                                </p>
                                                             </div>
                                                             <p class="organization-text">
                                                                 Lorem ipsum, dolor sit amet consectetur
@@ -665,157 +648,180 @@
                                 <section class="projects">
                                     <!--Project1-->
                                     <div class="card">
-                                        <h4 class="card-header font-weight-bold">PROJECT 1</h4>
+                                        <h4 class="card-header">PROJECT 1</h4>
                                         <div class="card-body">
-                                            <b><i>Presentation:</i></b><br> ipsum dolor sit amet consectetur
-                                            adipisicing
-                                            elit. Praesentium
-                                            perspiciatis incidunt voluptatibus quis perferendis ullam nisi
-                                            voluptates iste sint necessitatibus nulla suscipit, aliquid impedit
-                                            sit
-                                            sunt ea molestias inventore corrupti!
-                                            Nesciunt quia deleniti animi veritatis suscipit id eius tenetur,
-                                            laudantium earum in? Maiores quos ullam sint impedit asperiores
-                                            perspiciatis vero cum! Modi culpa distinctio alias facere assumenda,
-                                            nulla placeat illo.
-                                            Nesciunt consequuntur neque porro nam soluta explicabo, numquam
-                                            tempora?
-                                            Reiciendis quas at nihil cumque, saepe velit dicta dignissimos
-                                            consequatur vero voluptatem quisquam non libero quibusdam nemo quia
-                                            natus odio necessitatibus.
-                                            Magni iusto quaerat deleniti aliquam, quod modi consequatur. Impedit
-                                            exercitationem fuga atque ducimus? Odit, esse quis enim, est aperiam
-                                            distinctio optio vero modi tenetur autem laudantium, nemo quam quos
-                                            ullam!
-                                            Reprehenderit quisquam fugiat mollitia voluptatem iste omnis
-                                            eligendi in
-                                            odio magnam voluptates quam veritatis, necessitatibus illum adipisci
-                                            laudantium eum modi doloribus quaerat esse facere, voluptatum velit
-                                            eaque alias saepe? Voluptates?
-                                            <hr>
-                                            <div class="technical-summary">
-                                                <h5><b>Technical Summary</b></h5>
-                                                <div class="summary-content">
-                                                    <ul class="summary-list list-group list-group-flush">
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            HTML</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            CSS</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            BOOTSRAP</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            JAVASCRIPT</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            C#</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            REACT</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            ANGULAR</li>
-                                                    </ul>
+                                            <b><i>Presentation:</i></b><br>
+                                            <div class="body-projects">
+                                                <p>
+                                                    ipsum dolor sit amet consectetur
+                                                    adipisicing
+                                                    elit. Praesentium
+                                                    perspiciatis incidunt voluptatibus quis perferendis ullam nisi
+                                                    voluptates iste sint necessitatibus nulla suscipit, aliquid impedit
+                                                    sit
+                                                    sunt ea molestias inventore corrupti!
+                                                    Nesciunt quia deleniti animi veritatis suscipit id eius tenetur,
+                                                    laudantium earum in? Maiores quos ullam sint impedit asperiores
+                                                    perspiciatis vero cum! Modi culpa distinctio alias facere assumenda,
+                                                    nulla placeat illo.
+                                                    Nesciunt consequuntur neque porro nam soluta explicabo, numquam
+                                                    tempora?
+                                                    Reiciendis quas at nihil cumque, saepe velit dicta dignissimos
+                                                    consequatur vero voluptatem quisquam non libero quibusdam nemo quia
+                                                    natus odio necessitatibus.
+                                                    Magni iusto quaerat deleniti aliquam, quod modi consequatur. Impedit
+                                                    exercitationem fuga atque ducimus? Odit, esse quis enim, est aperiam
+                                                    distinctio optio vero modi tenetur autem laudantium, nemo quam quos
+                                                    ullam!
+                                                    Reprehenderit quisquam fugiat mollitia voluptatem iste omnis
+                                                    eligendi in
+                                                    odio magnam voluptates quam veritatis, necessitatibus illum adipisci
+                                                    laudantium eum modi doloribus quaerat esse facere, voluptatum velit
+                                                    eaque alias saepe? Voluptates?
+                                                </p>
+                                                <hr>
+                                                <div class="technical-summary">
+                                                    <h5>
+                                                        <b>Technical Summary</b>
+                                                    </h5>
+                                                    <div class="summary-content">
+                                                        <ul class="summary-list list-group list-group-flush">
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                HTML</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                CSS</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                BOOTSRAP</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                JAVASCRIPT</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                C#</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                REACT</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                ANGULAR</li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <!--Project2-->
                                     <div class="card mt-1">
-                                        <h4 class="card-header font-weight-bold">PROJECT 2</h4>
+                                        <h4 class="card-header">PROJECT 2</h4>
                                         <div class="card-body">
-                                            <b><i>Presentation:</i></b><br> Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Praesentium
-                                            perspiciatis incidunt voluptatibus quis perferendis ullam nisi
-                                            voluptates iste sint necessitatibus nulla suscipit, aliquid impedit
-                                            sit
-                                            sunt ea molestias inventore corrupti!
-                                            Nesciunt quia deleniti animi veritatis suscipit id eius tenetur,
-                                            laudantium earum in? Maiores quos ullam sint impedit asperiores
-                                            perspiciatis vero cum! Modi culpa distinctio alias facere assumenda,
-                                            nulla placeat illo.
-                                            Nesciunt consequuntur neque porro nam soluta explicabo, numquam
-                                            tempora?
-                                            Reiciendis quas at nihil cumque, saepe velit dicta dignissimos
-                                            consequatur vero voluptatem quisquam non libero quibusdam nemo quia
-                                            natus odio necessitatibus.
-                                            Magni iusto quaerat deleniti aliquam, quod modi consequatur. Impedit
-                                            exercitationem fuga atque ducimus? Odit, esse quis enim, est aperiam
-                                            distinctio optio vero modi tenetur autem laudantium, nemo quam quos
-                                            ullam!
-                                            Reprehenderit quisquam fugiat mollitia voluptatem iste omnis
-                                            eligendi in
-                                            odio magnam voluptates quam veritatis, necessitatibus illum adipisci
-                                            laudantium eum modi doloribus quaerat esse facere, voluptatum velit
-                                            eaque alias saepe? Voluptates?
-                                            <hr>
-                                            <div class="technical-summary">
-                                                <h5><b>Technical Summary</b></h5>
-                                                <div class="summary-content">
-                                                    <ul class="summary-list list-group list-group-flush">
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            HTML</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            CSS</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            BOOTSRAP</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            JAVASCRIPT</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            C#</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            REACT</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            ANGULAR</li>
-                                                    </ul>
+                                            <b><i>Presentation:</i></b><br>
+                                            <div class="body-projects">
+                                                <p>
+                                                    ipsum dolor sit amet consectetur
+                                                    adipisicing
+                                                    elit. Praesentium
+                                                    perspiciatis incidunt voluptatibus quis perferendis ullam nisi
+                                                    voluptates iste sint necessitatibus nulla suscipit, aliquid impedit
+                                                    sit
+                                                    sunt ea molestias inventore corrupti!
+                                                    Nesciunt quia deleniti animi veritatis suscipit id eius tenetur,
+                                                    laudantium earum in? Maiores quos ullam sint impedit asperiores
+                                                    perspiciatis vero cum! Modi culpa distinctio alias facere assumenda,
+                                                    nulla placeat illo.
+                                                    Nesciunt consequuntur neque porro nam soluta explicabo, numquam
+                                                    tempora?
+                                                    Reiciendis quas at nihil cumque, saepe velit dicta dignissimos
+                                                    consequatur vero voluptatem quisquam non libero quibusdam nemo quia
+                                                    natus odio necessitatibus.
+                                                    Magni iusto quaerat deleniti aliquam, quod modi consequatur. Impedit
+                                                    exercitationem fuga atque ducimus? Odit, esse quis enim, est aperiam
+                                                    distinctio optio vero modi tenetur autem laudantium, nemo quam quos
+                                                    ullam!
+                                                    Reprehenderit quisquam fugiat mollitia voluptatem iste omnis
+                                                    eligendi in
+                                                    odio magnam voluptates quam veritatis, necessitatibus illum adipisci
+                                                    laudantium eum modi doloribus quaerat esse facere, voluptatum velit
+                                                    eaque alias saepe? Voluptates?
+                                                </p>
+                                                <hr>
+                                                <div class="technical-summary">
+                                                    <h5>
+                                                        <b>Technical Summary</b>
+                                                    </h5>
+                                                    <div class="summary-content">
+                                                        <ul class="summary-list list-group list-group-flush">
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                HTML</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                CSS</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                BOOTSRAP</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                JAVASCRIPT</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                C#</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                REACT</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                ANGULAR</li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <!--Project3-->
                                     <div class="card mt-1">
-                                        <h4 class="card-header font-weight-bold">PROJECT 3</h4>
+                                        <h4 class="card-header">PROJECT 3</h4>
                                         <div class="card-body">
-                                            <b><i>Presentation:</i></b><br> Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Praesentium
-                                            perspiciatis incidunt voluptatibus quis perferendis ullam nisi
-                                            voluptates iste sint necessitatibus nulla suscipit, aliquid impedit
-                                            sit
-                                            sunt ea molestias inventore corrupti!
-                                            Nesciunt quia deleniti animi veritatis suscipit id eius tenetur,
-                                            laudantium earum in? Maiores quos ullam sint impedit asperiores
-                                            perspiciatis vero cum! Modi culpa distinctio alias facere assumenda,
-                                            nulla placeat illo.
-                                            Nesciunt consequuntur neque porro nam soluta explicabo, numquam
-                                            tempora?
-                                            Reiciendis quas at nihil cumque, saepe velit dicta dignissimos
-                                            consequatur vero voluptatem quisquam non libero quibusdam nemo quia
-                                            natus odio necessitatibus.
-                                            Magni iusto quaerat deleniti aliquam, quod modi consequatur. Impedit
-                                            exercitationem fuga atque ducimus? Odit, esse quis enim, est aperiam
-                                            distinctio optio vero modi tenetur autem laudantium, nemo quam quos
-                                            ullam!
-                                            Reprehenderit quisquam fugiat mollitia voluptatem iste omnis
-                                            eligendi in
-                                            odio magnam voluptates quam veritatis, necessitatibus illum adipisci
-                                            laudantium eum modi doloribus quaerat esse facere, voluptatum velit
-                                            eaque alias saepe? Voluptates?
-                                            <hr>
-                                            <div class="technical-summary">
-                                                <h5><b>Technical Summary</b></h5>
-                                                <div class="summary-content">
-                                                    <ul class="summary-list list-group list-group-flush">
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            HTML</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            CSS</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            BOOTSRAP</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            JAVASCRIPT</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            C#</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            REACT</li>
-                                                        <li class="list-group-item"><i class="fa fa-check"></i>
-                                                            ANGULAR</li>
-                                                    </ul>
+                                            <b><i>Presentation:</i></b><br>
+                                            <div class="body-projects">
+                                                <p>
+                                                    ipsum dolor sit amet consectetur
+                                                    adipisicing
+                                                    elit. Praesentium
+                                                    perspiciatis incidunt voluptatibus quis perferendis ullam nisi
+                                                    voluptates iste sint necessitatibus nulla suscipit, aliquid impedit
+                                                    sit
+                                                    sunt ea molestias inventore corrupti!
+                                                    Nesciunt quia deleniti animi veritatis suscipit id eius tenetur,
+                                                    laudantium earum in? Maiores quos ullam sint impedit asperiores
+                                                    perspiciatis vero cum! Modi culpa distinctio alias facere assumenda,
+                                                    nulla placeat illo.
+                                                    Nesciunt consequuntur neque porro nam soluta explicabo, numquam
+                                                    tempora?
+                                                    Reiciendis quas at nihil cumque, saepe velit dicta dignissimos
+                                                    consequatur vero voluptatem quisquam non libero quibusdam nemo quia
+                                                    natus odio necessitatibus.
+                                                    Magni iusto quaerat deleniti aliquam, quod modi consequatur. Impedit
+                                                    exercitationem fuga atque ducimus? Odit, esse quis enim, est aperiam
+                                                    distinctio optio vero modi tenetur autem laudantium, nemo quam quos
+                                                    ullam!
+                                                    Reprehenderit quisquam fugiat mollitia voluptatem iste omnis
+                                                    eligendi in
+                                                    odio magnam voluptates quam veritatis, necessitatibus illum adipisci
+                                                    laudantium eum modi doloribus quaerat esse facere, voluptatum velit
+                                                    eaque alias saepe? Voluptates?
+                                                </p>
+                                                <hr>
+                                                <div class="technical-summary">
+                                                    <h5>
+                                                        <b>Technical Summary</b>
+                                                    </h5>
+                                                    <div class="summary-content">
+                                                        <ul class="summary-list list-group list-group-flush">
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                HTML</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                CSS</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                BOOTSRAP</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                JAVASCRIPT</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                C#</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                REACT</li>
+                                                            <li class="list-group-item"><i class="fa fa-check"></i>
+                                                                ANGULAR</li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -825,51 +831,53 @@
                             <!--CONTACT-->
                             <div role="tabpanel" class="tab-pane fade" id="contact" aria-labelledby="pills-contact-tab">
                                 <section class="contact">
-                                    <div class="card-contact">
-                                        <h4 class="card-header font-weight-bold">GET IN TOUCH</h4>
-                                        <div class="card-body form-card">
-
-                                            <form class="contact-form form-group" onsubmit="return false">
-                                                <div class=" row mb-3">
-                                                    <div class="col">
-                                                        <input name="name" type="text" class="form-control "
-                                                            placeholder="Name*" aria-label="First name" maxlength="50"
-                                                            required>
+                                    <div class="card card-contact">
+                                        <h4 class="card-header">GET IN TOUCH</h4>
+                                        <div class="card-body">
+                                            <div class="body-contact">
+                                                <form class="contact-form form-group" onsubmit="return false">
+                                                    <div class=" row mb-3">
+                                                        <div class="col">
+                                                            <input name="name" type="text" class="form-control "
+                                                                placeholder="Name*" aria-label="First name"
+                                                                maxlength="50" required>
+                                                        </div>
                                                     </div>
-                                                </div>
 
-                                                <div class="row mb-3">
-                                                    <div class="col">
-                                                        <input name="email" type="email" class="form-control "
-                                                            id="email" placeholder="E-Mail*" aria-label="E-Mail"
-                                                            required>
+                                                    <div class="row mb-3">
+                                                        <div class="col">
+                                                            <input name="email" type="email" class="form-control "
+                                                                id="email" placeholder="E-Mail*" aria-label="E-Mail"
+                                                                required>
+                                                        </div>
                                                     </div>
-                                                </div>
 
-                                                <div class="row mb-3">
-                                                    <div class="col">
-                                                        <input name="subject" type="text" class="form-control"
-                                                            placeholder="Subject" aria-label="Subject" maxlength="50"
-                                                            required>
+                                                    <div class="row mb-3">
+                                                        <div class="col">
+                                                            <input name="subject" type="text" class="form-control"
+                                                                placeholder="Subject" aria-label="Subject"
+                                                                maxlength="50" required>
+                                                        </div>
                                                     </div>
-                                                </div>
 
-                                                <div class="row mb-3">
-                                                    <div class="col">
-                                                        <textarea name="textarea" class="form-control " id="textArea"
-                                                            rows="5" placeholder="Content*" aria-label="Text Area"
-                                                            maxlength="500" required></textarea></textarea>
+                                                    <div class="row mb-3">
+                                                        <div class="col">
+                                                            <textarea name="textarea" class="form-control "
+                                                                id="textArea" rows="5" placeholder="Content*"
+                                                                aria-label="Text Area" maxlength="500"
+                                                                required></textarea></textarea>
+                                                        </div>
                                                     </div>
-                                                </div>
 
-                                                <div class="row mb-5">
-                                                    <div class="col">
-                                                        <button type="submit" id="submitBtn"
-                                                            class="submit-button btn btn-outline-primary rounded-0 btn-lg"><b>Send
-                                                                Me</b></button>
+                                                    <div class="row mb-5">
+                                                        <div class="col">
+                                                            <button type="submit" id="submitBtn"
+                                                                class="submit-button btn btn-outline-primary rounded-0 btn-lg"><b>Send
+                                                                    Me</b></button>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </form>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </section>

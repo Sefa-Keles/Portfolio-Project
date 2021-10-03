@@ -11,6 +11,10 @@ $grey: grey;
     -o-transition: $property $duration $type;
 }
 
+@mixin width_height($width, $height) {
+    width: $width;
+    height: $height;
+}
 
 
 *{
@@ -27,6 +31,9 @@ html {
 
 .body {      
     background-color: $body_color;
+    h1,h2,h3,h4,h5,h6 {
+        font-weight: bold;
+    }
 }
 
 
@@ -34,51 +41,66 @@ html {
 /*NAVBAR-SECTION*/
 
 .menu-bar {
-    background-color: $white;   
-}
-
-#navbarCollapse {
-    a {
-        font-size: 1.44rem;
-        width: 27.2rem;
-        text-align: center;
-        border-radius: 0;
-        @include transition(all, .5s, ease-in-out);
-    }
-}
-
-.nav-li {
-    a {
-        color: $black;
-        padding: 2.4rem; 
-        i {
-            margin-right:1.6rem ;
+    background-color: $white; 
+    .navbar { 
+        .container {
+            #navbarCollapse {
+                .row-list {
+                    width: 100%;
+                    ul {
+                        padding: 0;/*Removes the remaining space from the right of the container*/
+                        width: 100%;
+                        .active {
+                            color: $white;
+                        }
+                        li {
+                            width: 25%;
+                            padding: 0;
+                            a {
+                                color: $black;
+                                font-size: 1.44rem;
+                                font-weight: bold;
+                                padding: 2rem;
+                                @include width_height(100%, 100%);
+                                text-align: center;
+                                border-radius: 0;
+                                @include transition(all, .5s, ease-in-out);
+                                    i {
+                                        margin-right:1.6rem ;
+                                    }
+                                    &:hover {
+                                        background-color: $navbar_color; 
+                                        color: $white;   
+                                    }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
-.nav-item a:hover {
-    background-color: $navbar_color;
-    color: $white;
-}
 
 
 /*CONTENT-SECTION*/
 .profile-picture {
     source {
-        width: 100%;
-        height: auto;
+        @include width_height(100%, auto);
         vertical-align: middle;
         .img-thumbnail {
-            width: 100%;
-            height: auto;
+            @include width_height(100%, auto);
             vertical-align: middle;
         }
     }
 }
 
-.information-card li a{
-    text-decoration: none;
+.information-card {
+    li {
+        a{
+            text-decoration: none;
+        }
+    }    
 }
 
 .social-li {
@@ -94,21 +116,30 @@ html {
     }  
 }
 
-.competencies-icon {
-    color: $navbar_color ;
+/*Contents Paddings*/
+.body-about, .body-education, .body-competencies, .body-projects, .body-contact {
+    padding: 1rem;
+}
+
+.core-competencies {
+ margin-bottom: 3rem;   
+    .competencies-icon {
+        color: $navbar_color ;
+    }
+    .competencies-info {
+        padding: 1rem;
+    }
 }
 
 .education-date, .trainings-date {
     font-size: 1.28rem;
 }
 
-.organization-text {
-    margin-top: 3rem;
-}
-
-.organisation-link:hover {
-    text-decoration: none;
-    @include transition(all, .5s, ease-in-out);
+.card-education, .card-trainings {
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .logo-image{
@@ -117,15 +148,24 @@ html {
     float: right;
 }
 
-.tab-content {
-    margin-bottom: 2rem;
+.organisation-link:hover {
+    text-decoration: none;
+    @include transition(all, .5s, ease-in-out);
 }
 
-.tab-pane {
-    .active{
-        @include transition(opacity, .3s, linear);
+.organization-text {
+    margin-top: 3rem;
+}
+
+.tab-content {
+    margin-bottom: 2rem;
+    .tab-pane {
+        .active{
+            @include transition(opacity, .3s, linear);
+        }
     }
 }
+
 
 .summary-list {
     li {
@@ -147,6 +187,10 @@ html {
     font-size: 1.5rem;
 }
 
+#submitBtn {
+    @include transition(all, .5s, ease-in-out)
+}
+
 
 /*FOOTER-SECTION*/
 
@@ -160,7 +204,7 @@ html {
 
 /*RESPONSIVE - BREAKPOINTS*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     .body {
         font-size: 1.3rem;
     }
@@ -174,7 +218,7 @@ html {
     }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 577px) and (max-width: 992px) {
     .body {
         font-size: 1.4rem;
     }

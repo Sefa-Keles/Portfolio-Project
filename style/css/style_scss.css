@@ -17,14 +17,41 @@ html {
   background-color: #f5f5f5;
 }
 
+.body h1, .body h2, .body h3, .body h4, .body h5, .body h6 {
+  font-weight: bold;
+}
+
 /*NAVBAR-SECTION*/
 .menu-bar {
   background-color: white;
 }
 
-#navbarCollapse a {
+.menu-bar .navbar .container #navbarCollapse .row-list {
+  width: 100%;
+}
+
+.menu-bar .navbar .container #navbarCollapse .row-list ul {
+  padding: 0;
+  /*Removes the remaining space from the right of the container*/
+  width: 100%;
+}
+
+.menu-bar .navbar .container #navbarCollapse .row-list ul .active {
+  color: white;
+}
+
+.menu-bar .navbar .container #navbarCollapse .row-list ul li {
+  width: 25%;
+  padding: 0;
+}
+
+.menu-bar .navbar .container #navbarCollapse .row-list ul li a {
+  color: black;
   font-size: 1.44rem;
-  width: 27.2rem;
+  font-weight: bold;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
   text-align: center;
   border-radius: 0;
   -webkit-transition: all 0.5s ease-in-out;
@@ -32,16 +59,11 @@ html {
   -o-transition: all 0.5s ease-in-out;
 }
 
-.nav-li a {
-  color: black;
-  padding: 2.4rem;
-}
-
-.nav-li a i {
+.menu-bar .navbar .container #navbarCollapse .row-list ul li a i {
   margin-right: 1.6rem;
 }
 
-.nav-item a:hover {
+.menu-bar .navbar .container #navbarCollapse .row-list ul li a:hover {
   background-color: #337ab7;
   color: white;
 }
@@ -74,16 +96,40 @@ html {
   margin-top: 12.8rem;
 }
 
-.competencies-icon {
+/*Contents Paddings*/
+.body-about, .body-education, .body-competencies, .body-projects, .body-contact {
+  padding: 1rem;
+}
+
+.core-competencies {
+  margin-bottom: 3rem;
+}
+
+.core-competencies .competencies-icon {
   color: #337ab7;
+}
+
+.core-competencies .competencies-info {
+  padding: 1rem;
 }
 
 .education-date, .trainings-date {
   font-size: 1.28rem;
 }
 
-.organization-text {
-  margin-top: 3rem;
+.card-education .row, .card-trainings .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo-image {
+  width: 8rem;
+  height: 7rem;
+  float: right;
 }
 
 .organisation-link:hover {
@@ -93,17 +139,15 @@ html {
   -o-transition: all 0.5s ease-in-out;
 }
 
-.logo-image {
-  width: 8rem;
-  height: 7rem;
-  float: right;
+.organization-text {
+  margin-top: 3rem;
 }
 
 .tab-content {
   margin-bottom: 2rem;
 }
 
-.tab-pane .active {
+.tab-content .tab-pane .active {
   -webkit-transition: opacity 0.3s linear;
   -moz-transition: opacity 0.3s linear;
   -o-transition: opacity 0.3s linear;
@@ -129,6 +173,12 @@ html {
   font-size: 1.5rem;
 }
 
+#submitBtn {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
 /*FOOTER-SECTION*/
 .footer {
   background-color: black;
@@ -137,7 +187,7 @@ html {
 }
 
 /*RESPONSIVE - BREAKPOINTS*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .body {
     font-size: 1.3rem;
   }
@@ -149,7 +199,7 @@ html {
   }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 577px) and (max-width: 992px) {
   .body {
     font-size: 1.4rem;
   }
