@@ -5,8 +5,13 @@ The responsive portfolio website design presented in this repository was created
 ***  
 
 ## Features  
+<<<<<<< HEAD
 * => Ease of navigation with stylish and smooth transition       
 * => Font appearance customized with Google font family and font size
+=======
+* => Ease of navigation with stylish and smooth transition  
+* => Font appearance customized with Google font family and font-size     
+>>>>>>> 54ffd3e675c0630eea770cdd160bae7ace224cf3
 * => Increased SEO visibility with meta tag
 * => SEO friendly design with semantic design
 * => Grid design navbar for mobile
