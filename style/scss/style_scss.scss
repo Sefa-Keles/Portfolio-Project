@@ -84,30 +84,38 @@ html {
 
 
 /*CONTENT-SECTION*/
-.profile-picture {
-    source {
-        @include width_height(100%, auto);
-        vertical-align: middle;
-        .img-thumbnail {
-            @include width_height(100%, auto);
-            vertical-align: middle;
-        }
-    }
-}
+
 
 .information-card {
+        .img-thumbnail {
+            max-width: 100%;
+            height: auto;
+        }
+    }
     li {
         a{
             text-decoration: none;
-        }
-    }    
-}
-
-.social-li {
-    a {
-        color: $black;
-        @include transition(all, .5s, ease-in-out);
     }
+}    
+
+
+.social-nav {
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: $black;
+                &:hover {
+                    @include transition(all, .3s, ease-in-out);
+                    color: $navbar_color;
+                }
+            }
+        }
+    }
+    
 }
 
 .main-content  {
@@ -121,8 +129,12 @@ html {
     padding: 1rem;
 }
 
+.col-competencies {
+    padding: 1.5rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.16);
+}
+
 .core-competencies {
- margin-bottom: 3rem;   
     .competencies-icon {
         color: $navbar_color ;
     }
@@ -143,8 +155,8 @@ html {
 }
 
 .logo-image{
-    width: 8rem;
-    height: 7rem;
+    max-width: 7rem;
+    max-height: 6rem;
     float: right;
 }
 
@@ -208,6 +220,8 @@ html {
     .body {
         font-size: 1.3rem;
     }
+
+    
 
     .summary-list li {
         font-size: 1.1rem;

@@ -102,51 +102,52 @@
                 <!--Main Content Row-->
                 <div class="row">
                     <!--Main Content Left Column-->
-                    <div class="column-left col-sm-4 mb-5">
+                    <div class="column-left col-md-4 mb-5">
                         <div class="card">
                             <div class="card-header">
                                 <h3>LOREM IPSUM</h3>
                             </div>
-                            <div class="card-body information-card">
+                            <div class="card-body information-card w-100">
                                 <!--Profile Picture-->
-                                <picture class="profile-picture">
-                                    <source srcset="img/bridge.jpg">
-                                    <img src="img/bridge2.jpg" class="card-img-top img-thumbnail" alt="image">
-                                </picture>
+                                <div class="content-picture">
+                                    <img src="img/bridge.jpg" class="img-thumbnail" alt="image">
+                                </div>
                                 <!--Personal Informations-->
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <p><b>NAME:</b><span> Lorem Ipsum</span></p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p><b>LOCATION:</b><span> London / UK</span></p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p><b>EXPERIENCE:</b><span> Beginner</span></p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p><b>DEGREE:</b><span> Bachelor's Degree / Graduated</span></p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p><b>CAREER LEVEL:</b><span> Junior Web Developer</span></p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p><b>PHONE:</b><a class="information-tel text-primary"
-                                                href="tel: +441234567899"> (+44)1234567899</a></p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p><b>E-MAIL:</b>
-                                            <a class="information-email text-primary" href="mailto:abc@gmail.com">
-                                                abc@gmail.com</a>
-                                        </p>
+                                <div class="list-info mt-3">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <p><b>NAME:</b><span> Lorem Ipsum</span></p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><b>LOCATION:</b><span> London / UK</span></p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><b>EXPERIENCE:</b><span> Beginner</span></p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><b>DEGREE:</b><span> Bachelor's Degree / Graduated</span></p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><b>CAREER LEVEL:</b><span> Junior Web Developer</span></p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><b>PHONE:</b><a class="information-tel text-primary"
+                                                    href="tel: +441234567899"> (+44)1234567899</a></p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><b>E-MAIL:</b>
+                                                <a class="information-email text-primary" href="mailto:abc@gmail.com">
+                                                    abc@gmail.com</a>
+                                            </p>
 
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p><b>WEBSITE:</b>
-                                            <span>abc@abc.co.uk</span>
-                                        </p>
-                                    </li>
-                                </ul>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><b>WEBSITE:</b>
+                                                <span>abc@abc.co.uk</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <!--Social Medias-->
@@ -154,24 +155,28 @@
                             <div class="card-header">
                                 <h4>SOCIAL PROFILES</h4>
                             </div>
-                            <div class="row">
-                                <div class="card-body social-icon p-4">
-                                    <ul class="nav nav-pills">
-                                        <li class="col-3 social-li nav-item"><a href="#"
-                                                class=" nav-link fab fa-linkedin fa-2x" target="_blank"></a></li>
-                                        <li class="col-3 social-li nav-item"><a href="#"
-                                                class="nav-link fab fa-instagram fa-2x" target="_blank"></a></li>
-                                        <li class="col-3 social-li nav-item"><a href="#"
-                                                class="nav-link fab fa-facebook fa-2x" target="_blank"></a></li>
-                                        <li class="col-3 social-li nav-item"><a href="#"
-                                                class="nav-link fab fa-github fa-2x" target="_blank"></a></li>
+                            <div class="card-body social-icon">
+                                <div class="social-nav pt-3">
+                                    <ul>
+                                        <li class="social-list">
+                                            <a href="#" class="fab fa-linkedin fa-2x" target="_blank"></a>
+                                        </li>
+                                        <li class="social-list">
+                                            <a href="#" class="fab fa-instagram fa-2x" target="_blank"></a>
+                                        </li>
+                                        <li class="social-list">
+                                            <a href="#" class="fab fa-facebook fa-2x" target="_blank"></a>
+                                        </li>
+                                        <li class="social-list">
+                                            <a href="#" class="fab fa-github fa-2x" target="_blank"></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--Main Content Right Column-->
-                    <div class="column-right col-sm-8">
+                    <div class="column-right col-md-8">
                         <!--Dynamic Content-->
                         <div class="tab-content">
                             <!--ABOUT-->
@@ -212,8 +217,9 @@
                                         <h4 class="card-header">CORE COMPETENCIES</h4>
                                         <div class="card-body">
                                             <div class="body-competencies">
-                                                <div class="row mt-2 mb-5">
-                                                    <div class="col-sm-12 col-md-6 col-lg-4 px-2 text-center">
+                                                <div class="row p-2 mt-2 mb-2">
+                                                    <div
+                                                        class="col-competencies col-sm-12 col-md-6 col-lg-4 px-2 text-center">
                                                         <div class="core-competencies">
                                                             <div class="competencies-icon">
                                                                 <i class="fas fa-hourglass-half fa-2x"></i><br><b>TIME
@@ -229,7 +235,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-12 col-md-6 col-lg-4 px-2 text-center">
+                                                    <div
+                                                        class="col-competencies col-sm-12 col-md-6 col-lg-4 px-2 text-center">
                                                         <div class="core-competencies">
                                                             <div class="competencies-icon">
                                                                 <i class="fas fa-magic fa-2x"></i><br><b>ANALYTICAL
@@ -245,7 +252,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-12 col-md-6 col-lg-4 px-2 text-center">
+                                                    <div
+                                                        class="col-competencies col-sm-12 col-md-6 col-lg-4 px-2 text-center">
                                                         <div class="core-competencies">
                                                             <div class="competencies-icon">
                                                                 <i
@@ -261,7 +269,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-12 col-md-6 col-lg-4 px-2 text-center">
+                                                    <div
+                                                        class="col-competencies col-sm-12 col-md-6 col-lg-4 px-2 text-center">
                                                         <div class="core-competencies">
                                                             <div class="competencies-icon">
                                                                 <i
@@ -277,7 +286,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-12 col-md-6 col-lg-4 px-2 text-center">
+                                                    <div
+                                                        class="col-competencies col-sm-12 col-md-6 col-lg-4 px-2 text-center">
                                                         <div class="core-competencies">
                                                             <div class="competencies-icon">
                                                                 <i class="fas fa-server fa-2x"></i><br><b>TECHNICAL
@@ -293,7 +303,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-12 col-md-6 col-lg-4 px-2 text-center">
+                                                    <div
+                                                        class="col-competencies col-sm-12 col-md-6 col-lg-4 px-2 text-center">
                                                         <div class="core-competencies">
                                                             <div class="competencies-icon">
                                                                 <i
@@ -342,12 +353,8 @@
                                                             <hr>
                                                             <div class="logo ml-auto">
                                                                 <a target="_blank" href="">
-                                                                    <picture>
-                                                                        <source media="(min-width:650px)"
-                                                                            srcset="img/way.jpg">
-                                                                        <img class="logo-image" src="img/way2.jpg"
-                                                                            alt="logo">
-                                                                    </picture>
+                                                                    <img class="logo-image" src="img/way2.jpg"
+                                                                        alt="logo">
                                                                 </a>
                                                             </div>
                                                             <div class="organisation">
@@ -392,12 +399,8 @@
                                                             <hr>
                                                             <div class="logo ml-auto">
                                                                 <a target="_blank" href="">
-                                                                    <picture>
-                                                                        <source media="(min-width:650px)"
-                                                                            srcset="img/way.jpg">
-                                                                        <img class="logo-image" src="img/bridge2.jpg"
-                                                                            alt="logo">
-                                                                    </picture>
+                                                                    <img class="logo-image" src="img/bridge2.jpg"
+                                                                        alt="logo">
                                                                 </a>
                                                             </div>
 
@@ -444,12 +447,8 @@
 
                                                             <div class="logo ml-auto">
                                                                 <a target="_blank" href="">
-                                                                    <picture>
-                                                                        <source media="(min-width:650px)"
-                                                                            srcset="img/way.jpg">
-                                                                        <img class="logo-image" src="img/bridge2.jpg"
-                                                                            alt="logo">
-                                                                    </picture>
+                                                                    <img class="logo-image" src="img/bridge2.jpg"
+                                                                        alt="logo">
                                                                 </a>
                                                             </div>
 
@@ -504,12 +503,8 @@
 
                                                             <div class="logo ml-auto">
                                                                 <a target="_blank" href="">
-                                                                    <picture>
-                                                                        <source media="(min-width:650px)"
-                                                                            srcset="img/way.jpg">
-                                                                        <img class="logo-image" src="img/bridge2.jpg"
-                                                                            alt="logo">
-                                                                    </picture>
+                                                                    <img class="logo-image" src="img/bridge2.jpg"
+                                                                        alt="logo">
                                                                 </a>
                                                             </div>
 
@@ -556,12 +551,8 @@
 
                                                             <div class="logo ml-auto">
                                                                 <a target="_blank" href="">
-                                                                    <picture>
-                                                                        <source media="(min-width:650px)"
-                                                                            srcset="img/way.jpg">
-                                                                        <img class="logo-image" src="img/bridge2.jpg"
-                                                                            alt="logo">
-                                                                    </picture>
+                                                                    <img class="logo-image" src="img/bridge2.jpg"
+                                                                        alt="logo">
                                                                 </a>
                                                             </div>
 
@@ -606,12 +597,8 @@
                                                             <hr>
                                                             <div class="logo ml-auto">
                                                                 <a target="_blank" href="">
-                                                                    <picture>
-                                                                        <source media="(min-width:650px)"
-                                                                            srcset="img/way.jpg">
-                                                                        <img class="logo-image" src="img/bridge2.jpg"
-                                                                            alt="logo">
-                                                                    </picture>
+                                                                    <img class="logo-image" src="img/bridge2.jpg"
+                                                                        alt="logo">
                                                                 </a>
                                                             </div>
 
