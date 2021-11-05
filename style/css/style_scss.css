@@ -3,14 +3,14 @@
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /*Google Font CSS*/
   font-family: 'Raleway', sans-serif;
 }
 
 html {
   font-size: 10px;
-  /*for responsive-size*/
+  /*for responsive- font size*/
 }
 
 .body {
@@ -46,13 +46,14 @@ html {
 }
 
 .menu-bar .navbar .container #navbarCollapse .row-list ul li a {
+  text-align: center;
   color: black;
   font-size: 1.44rem;
   font-weight: bold;
   padding: 2rem;
   width: 100%;
   height: 100%;
-  text-align: center;
+
   border-radius: 0;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -60,6 +61,8 @@ html {
 }
 
 .menu-bar .navbar .container #navbarCollapse .row-list ul li a i {
+  display: flex;
+  justify-content: center;
   margin-right: 1.6rem;
 }
 
@@ -83,8 +86,8 @@ li a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .social-nav ul li {
@@ -115,7 +118,7 @@ li a {
 .col-competencies {
   padding: 1.5rem;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .core-competencies .competencies-icon {
@@ -135,8 +138,8 @@ li a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .logo-image {
@@ -235,4 +238,3 @@ li a {
     font-size: 1.5rem;
   }
 }
-/*# sourceMappingURL=style_scss.css.map */
