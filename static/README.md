@@ -7,8 +7,6 @@ The responsive portfolio website design presented in this repository was created
 ## Features  
 * => Ease of navigation with stylish and smooth transition       
 * => Font appearance customized with Google font family and font size
-* => Ease of navigation with stylish and smooth transition  
-* => Font appearance customized with Google font family and font-size     
 * => Increased SEO visibility with meta tag
 * => SEO friendly design with semantic design
 * => Grid design navbar for mobile
@@ -100,8 +98,3 @@ This website design was produced with the Visual Studio Code IDE. Git was used a
 * Grid [https://getbootstrap.com/docs/4.0/layout/grid/](https://getbootstrap.com/docs/4.0/layout/grid/)
 
 ***
-
-**NOTE:** The development and updates of the project will continue...
-**Next Improvements and Updates**    
-* => References Page will be added.
-* => Uploading diplomas and certificates to the Trainings page
